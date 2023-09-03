@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- onclick="return registrationForm()" action="" name="myForm"  -->
+    <h1>Registration Form</h1>
+    <div class="form-background">
+    <form onclick="return registrationForm(event)" action="" name="myForm" id="registrationForm">
+
+        <label>Enter your full name</label><br>
+        <input  type="text" name="fullName" placeholder="Please Enter your name" id="fullName" required> 
+        <br><label class="error" id="errorName" style="font-size: 15px; color: rgb(253, 10, 10);"></label>
+        <br><br>
+
+        <label>Enter your Email Address</label><br>
+        <input type="email" name="email" placeholder="Please Enter your email id" id="email" required>
+        <label class="error" id="errorEmail" style="font-size: 15px; color: red;"></label>
+       <br><br>
+
+        <label>Enter your Password</label><br>
+        <input type="password" name="password" placeholder="Please Enter your password" id="password" required>
+        <label class="error" id="errorPassword" style="font-size: 15px; color: red;"></label>
+       <br><br>
+
+        <label>Please confirm your password</label><br>
+        <input type="password" name="confirmPassword" placeholder="confirm password " id="confirmPassword" required>
+        <label class="error" id="errorConfirmPassword" style="font-size: 15px; color: red;"></label>
+       <br><br>
+
+        <label>Enter your Age</label><br>
+        <input type="number" name="age" min="18" placeholder="Please Enter your age" id="age" required>
+        <label class="error" id="errorAge" style="font-size: 15px; color: red;"></label>
+        <br> <br>
+
+        <label  id="Gender"> Gender:
+            <div class="name">
+            <input type="radio" name="gender" id="circle"> Male
+            <input type="radio" name="gender" id="circle"> Female
+            <input type="radio" name="gender" id="circle"> Others
+            </div>
+        </label>
+        <br>
+
+        <label id="interest"> Interests:
+            <div class="like">
+            <input type="checkbox" name="interests" id="box"> Sports
+            <input type="checkbox" name="interests" id="box"> Music
+            <input type="checkbox" name="interests" id="box"> Reading
+            <input type="checkbox" name="interests" id="box"> Traveling
+             </div>
+        </label> <br>
+        <label for="country"> Select a country :</label>
+        <select name="country" id="country"placeholder="select the conuntry:">
+            <option value="ind">India</option>
+            <option value="us">U.S.A</option>
+            <option value="uk">United Kingdom</option>
+            <option value="pak">Pakistan</option>
+            <option value="chin">China</option>
+            <option value="russ">Russsia</option>
+            <option value="fran">france</option>
+        </select><br><br>
+            <button type="submit" text="Register"> Submit</button>
+
+            <p>By Clicking the Sumbit button,you agree to our 
+            <a href="link">Term and Condition</a> and <a href="link">Policy Privacy</a>
+            </p>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
